@@ -24,10 +24,16 @@ h1 {
     font-weight: 400px;
     font-family: 'Pacifico', cursive;
     line-height: 90px;
-    color: black;
+    color: white;
     letter-spacing: 2px;
     word-spacing: 6px;
     font-size: 55px;
+}
+.h11 {
+    background: url(../image/IMG-8559.JPG) no-repeat center center fixed;
+    background-size: cover;
+    height: auto;
+    padding-left: 400px;
 }
 #h1 {
     text-align: center;
