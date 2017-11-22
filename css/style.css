@@ -62,9 +62,26 @@ h1 {
 .divs {
     display: block;
 }
+.pics {
+    margin: 6px;
+    border: solid 2px black;
+}
 @media (max-width: 768px) {
     .facetwitt {
         display: inline-block;
         margin: 3px;
     }
+    .header {
+   height: 580px;
+	background: url(../image/IMG-89542.jpg) no-repeat center center fixed;
+	background-size: cover;
+        width: 100%;
+}
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .h11 {
+    padding-left: 0;
+}
 }
