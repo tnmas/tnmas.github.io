@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Slabo+27px');
+@import url('../fonts/font-awesome/css/font-awesome.css');
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+   height: 780px;
+	background: url(../image/IMG-89542.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+#header {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    
+}
+
+h1 {
+   margin: 0;
+    padding: 0;
+    padding-bottom: 4px;
+    text-align: center;
+    font-weight: 400px;
+    font-family: 'Pacifico', cursive;
+    line-height: 90px;
+    color: black;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    font-size: 55px;
+}
+#h1 {
+    text-align: center;
+    line-height: 90px;
+    color: #fff;
+    font-size: 38px;
+    font-family: 'Dancing Script', cursive;
+}
+#tsigu {
+    padding: 3px;
+    vertical-align: baseline;
+    background: transparent;
+    text-align: left;
+    
+}
+.tsgu {
+    text-align: left;
+}
+#border {
+    border: solid 0.5px black;
+}
+.facetwitt {
+    display: block;
+    margin: 15px;
+}
+.divs {
+    display: block;
+}
+@media (max-width: 768px) {
+    .facetwitt {
+        display: inline-block;
+        margin: 3px;
+    }
+}
