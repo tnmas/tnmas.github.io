@@ -55,7 +55,7 @@ h1 {
     text-align: left;
     
 }
-.tsgu {
+.tsigu {
     text-align: left;
 }
 #border {
@@ -72,6 +72,41 @@ h1 {
     margin: 13px;
     margin-right: 0;
     border: solid 2px black;
+}
+
+ul li {
+    font-size: 17px;
+    padding: 3px;
+}
+ul {
+  margin: 0;
+}
+ul.nobullet {
+  list-style-type: none;
+}
+ul.nobullet > li {
+  text-indent: 0;
+}
+ul.nobullet > li:before {
+  content: "– ";
+  display: inline-block;
+    width: 20px;
+    margin: 0 0 0 -20px;
+}
+ul.nobullet {
+    text-align: left; 
+    padding: 0;
+}
+footer {
+    width: 100%; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border: solid 1px black;
+    text-align: center;
+    background: black; 
+    color: white; 
+    padding-left: 100px;
 }
 @media (max-width: 768px) {
     .facetwitt {
@@ -91,8 +126,4 @@ h1 {
     .h11 {
     padding-left: 0;
 }
-}
-ol, ul li {
-    list-style-type: none;
-    font-size: 17px;
 }
