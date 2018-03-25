@@ -7,6 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+      <script src="../php/process.php"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="../js/magic.js"></script>
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Contact | Tsigereda</title>
 
@@ -49,43 +54,46 @@
     <br>
     <br>
     <div class="container cont">
-       <div class="row">
-        <div class="col-xs-12 col-md-10">
+        <div class="row">
+            <div class="col-xs-12 col-md-10">
 
-        <p>Feel free to contact me!</p>
-        <p>You can leave any message in this message box.</p>
-        <form action="" method="post">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Name</label>
-                <input type="name" class="form-control" id="exampleInputEmail1" placeholder="full-name">
+                <p>Feel free to contact me!</p>
+                <p>You can leave any message in this message box.</p>
+                <div id="form-messages"></div>
+                <form action="process.php" method="post" id="ajax-contact">
+                    <div id="name-group" class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="name" placeholder="full-name" required>
+                    </div>
+                    <div id="email-group" class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="email" placeholder="Email" required>
+                    </div>
+                    <div id="superhero-group" class="form-group">
+                        <label for="superheroAlias">Message</label>
+                        <textarea type="text" class="form-control" id="exampleInputEmail1" placeholder="your text here" name="superheroAlias" maxlength="1000" required></textarea>
+                    </div>
+                    <div class="button">
+                        <button class="btn btn-success" type="submit">Send<span class="fa fa-arrow-right"></span></button>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Message</label>
-                <textarea type="message" class="form-control" id="exampleInputEmail1" placeholder="your text here" name="textmessage" maxlength="1000"></textarea>
-            </div>
-            <div class="button">
-                <button class="btn btn-default" type="submit">Send</button>
-            </div>
-        </form>
-           </div>
-   <div class="col-xs-12 col-md-1">
-            <span style="line-height: 1.4em; margin-left: : 40px;" id="tsigu" >
+            <div class="col-xs-12 col-md-1">
+                <span style="line-height: 1.4em; margin-left: : 40px;" id="tsigu">
                     <p><strong>Be Social</strong></p>
                     <a href="https://plus.google.com/u/0/103725301072350335537" class="facetwitt"><img src="https://image.flaticon.com/icons/svg/145/145804.svg" width="50px"></a>   
                      <a href="https://www.instagram.com/agida93lve/" class="facetwitt"><img src="https://image.flaticon.com/icons/svg/174/174855.svg" width="50px"></a>  
                        <a href="https://www.linkedin.com/in/tsigereda-nebai-027591131/" class="facetwitt"><img src="https://image.flaticon.com/icons/svg/124/124011.svg" width="50px"></a>    
                        <a href="https://twitter.com/agida14" class="facetwitt"><img src="https://image.flaticon.com/icons/svg/145/145812.svg" width="50px"></a>     <a href="https://www.facebook.com/nebai.ts" class="facetwitt"><img src="https://image.flaticon.com/icons/svg/124/124010.svg" width="50px"></a>
                 </span>
-        </div>
+            </div>
         </div>
     </div>
 
-     <div>
-     <footer > <p>©copy right 2017  tsigereda </p></footer>
+    <div>
+        <footer>
+            <p>©copy right 2017 tsigereda </p>
+        </footer>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
